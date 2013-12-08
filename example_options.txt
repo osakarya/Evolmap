@@ -1,0 +1,20 @@
+processors = 50
+
+tree = ((((((((((((((Homo,Mus),Ciona),Branchiostoma),Drosophila),(Nematostella,Hydra)),Trichoplax),Amphimedon),Monosiga),((Saccharomyces,Neurospora),Schizosaccharomyces)),Dictyostelium),(Arabidopsis,(Volvox,Chlamydomonas))),(Thalassiosira,Phaeodactylum)),Archae),Bacteria)
+#tree = (((((((((((Homo,Mus),Ciona),Branchiostoma),Drosophila),(Nematostella,Hydra)),Trichoplax),Amphimedon),Monosiga),Saccharomyces),Archae),Bacteria)
+tag = .fa
+protein = true
+database_name = all_genomes
+read_database = false
+Blastall = true // Runs BLAST all first 
+read_blast_scores = false // If true reads already calculated BLAST scores and starts analysis from this step
+alignments = 300 // This many alignments are retrieved from BLAST for each sequence
+bit_scores = false // Use blast bit scores or needleman-wusch scores
+read_scores = false // if true reads scores from score file and starts analysis from this step
+read_ancestors = false // if true reads already calculated ancestors and starts analysis from this step
+view_ancestors = false // if true, tries to open already calculated ancestors and view them with a gui, all other options are ignored
+sfa = false // if true creates sfa file for final ancestor -- takes long for large ancestors
+ortholog_threshold = 250 // minimum similarity threshold for orthologs
+diverged_threshold = 250 // minimum similarity threshold for diverged paralogs
+diverged_std = 4 // diverged paralogs are allowed to be at most this many ortholog divergence standard deviations away from this ortholog's sym-bet score
+avg_of_paralogs = true
