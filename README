@@ -3,7 +3,7 @@ java -jar -Xmx2g EvolMap1.1.jar options.txt
 
 There is an example_options.txt file and fields are explained in the manual. New addition in this version is the processors=N option which is for multi-threading. Species fasta files must be next to the options file as specified with the name in tree plus the tag (e.g. .fa).
 
-To run horizontal gene transfer detection, first run evolmap. Then specify a species and an ancestor for which the HGT events are to be detected.
+To run horizontal gene transfer detection, first run evolmap. Then specify a species and an ancestor for which the HGT events are to be detected using HGT.sh. Example run provided is used to detect HGTs in Amphimedon(sponge) of Archaea_Bacteria on the ancestor of all 21 species used in this analysis.
 
 There are helper classes to detect GC content, GC content in first and third position of the transcripts, and find the origin of genes. These are currently executed manually in the source code.
 
